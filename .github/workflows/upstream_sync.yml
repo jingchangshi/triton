@@ -29,6 +29,6 @@ jobs:
 
       - name: Sync specific branch (e.g., main)
         run: |
-          git checkout release/3.2.x  # 切换到要同步的本地分支
+          git checkout origin/release/3.2.x  # 切换到要同步的本地分支
           git reset --hard upstream/release/3.2.x  # 重置为上游分支
           git push -f origin release/3.2.x  # 强制推送到当前仓库
